@@ -1,0 +1,34 @@
+export default [
+{
+    id:1,
+    name:'Economy',
+    image:'/car-taxi/1.jpg',
+    charges:1
+},
+{
+    id:2,
+    name:'Midsize',
+    image:'/car-taxi/2.jpg',
+    charges:1.3
+},{
+    id:3,
+    name:'Minivan',
+    image:'/car-taxi/3.jpg',
+    charges:2.0
+},{
+    id:4,
+    name:'Wagon',
+    image:'/car-taxi/4.jpg',
+    charges:1.3
+},{
+    id:5,
+    name:'Luxury',
+    image:'/car-taxi/5.jpg',
+    charges:2.5
+},{
+    id:6,
+    name:'Premium',
+    image:'/car-taxi/6.jpg',
+    charges:3.0
+},
+]
