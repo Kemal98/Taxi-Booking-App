@@ -12,7 +12,7 @@ const Cars = () => {
   return (
     <div className="mt-2 ">
      <h2 className="font-semibold text-[18px]">Select cars</h2>
-      <div className="grid grid-cols-3 md:grid-cols-2 xl:grid-cols-3 gap-2 items-center justify-center  mt-2">
+      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-2 items-center justify-center  mt-2">
            {ListCar.map((car, index)=> (
              <div 
               onClick={()=>{setSelectCar(index)}}

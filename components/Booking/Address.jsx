@@ -23,34 +23,34 @@ const Address = () => {
 
   const soruceCordinates = useSelector((state) => state.soruceCordinates?.value);
   const soruceDestination = useSelector((state) => state.soruceDestination?.value);   
-
-
-
+  
+  
   useEffect(() => {
     if(source || destination == '' ) {setAddressList([])}
-
+    
     const fn = setTimeout(() => {
       getAddress();
     }, 1000);
     return () => clearTimeout(fn);
   }, [source, destination]);
-
+  
   const getAddress = async () => {
 
     const query = sourceChange ? source : destination
    console.log(query)
-
-    const res = await fetch(`/api/search-address?q=${query}`, {
+   
+   const res = await fetch(`/api/search-address?q=${query}`, {
       headers: {
         "Content-Type": "application/json",
       },
     });
     console.log(res)
     const addressResult = await res.json();
+    console.log(addressResult)
     setAddressList(addressResult);
   };
-
-
+  
+  
 
 
   const onSourceAddress = async (item) =>  {
@@ -108,7 +108,7 @@ const Address = () => {
                 className="p-3 cursor-pointer hover:bg-gray-100"
                 onClick={() => onSourceAddress(item)}
               >
-                {item.full_address}
+                {item.full_address ? item.full_address : item.name }
               </h2>
             ))}
           </div>

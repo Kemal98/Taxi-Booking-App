@@ -35,7 +35,7 @@ export default function Home() {
       <div className=' '>
        <Booking/>
       </div>
-      <div className=''>
+      <div className='px-6 md:px-[0px]'>
         <MapBox/>
       </div>
     </div>
