@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.cl-signIn-root{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding: 5%;
+}
